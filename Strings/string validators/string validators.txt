@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    s = input()
+    flags = [False] * 5
+
+    for char in s:
+        if char.isalnum():
+            flags[0] = True
+        if char.isalpha():
+            flags[1] = True
+        if char.isdigit():
+            flags[2] = True
+        if char.islower():
+            flags[3] = True
+        if char.isupper():
+            flags[4] = True
+
+    for flag in flags:
+        print(flag)
